@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse approved HERD International research data resources by year and project.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Data catalogue | HERD International</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./catalog.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">H</span><span>HERD <strong>International</strong></span></div>
+      <span class="eyebrow">Research data catalogue</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="kicker">Discover research resources</span>
+        <h1>Evidence worth finding.<br><em>Collaboration worth starting.</em></h1>
+        <p>Browse project records by year, find available resources, and learn how to request access. Only reviewed records should be published here.</p>
+        <div id="review-notice" class="review-notice" hidden><strong>Internal review preview — not for publication.</strong> Folder labels and file names below have not been approved for public display. No files are linked or downloadable.</div>
+        <div class="stats" aria-label="Catalogue summary">
+          <div><strong id="year-count">0</strong><span>Years surveyed</span></div>
+          <div><strong id="project-count">0</strong><span>Project folders</span></div>
+          <div><strong id="file-count">0</strong><span>Files inventoried</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalogue wrap" aria-labelledby="browse-title">
+      <div class="section-heading">
+        <div><span class="kicker dark">THE CATALOGUE</span><h2 id="browse-title">Browse projects</h2></div>
+        <p id="result-count" role="status" aria-live="polite"></p>
+      </div>
+      <div class="filters">
+        <label for="search">Search project or file name <span class="review-only" hidden>(internal preview)</span></label>
+        <input id="search" type="search" placeholder="Search projects, formats or resource types…" autocomplete="off">
+        <label for="year">Year folder</label>
+        <select id="year"><option value="">All years</option></select>
+        <label class="check"><input id="include-empty" type="checkbox" checked><span>Show folders with no files found</span></label>
+      </div>
+      <div id="project-list" class="project-grid"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <h3>No matching project records</h3>
+        <p>Try a different search or year. Public listings are added only after HERD approval.</p>
+      </div>
+    </section>
+
+    <section class="access-note wrap" aria-labelledby="access-title">
+      <div><span class="kicker dark">DATA ACCESS</span><h2 id="access-title">Publication and access are separate decisions.</h2></div>
+      <p>Only explicitly approved files receive a public download link. Other files remain with HERD and may be described as request-only only when the project owner authorises it. A listed folder does not imply permission to share its contents.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap">HERD International · Catalogue prototype · No project records are public until approved.</div></footer>
+</body>
+</html>
