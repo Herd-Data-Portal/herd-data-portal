@@ -17,6 +17,13 @@ window.HERD_CATALOG = {
           access: "public",
           publicUrl: "./files/CHORUS_2020/chorus-report.pdf"
         },
+         {
+          name: "Survey Questionnaire",
+          group: "Tools",
+          type: ".docx",
+          access: "public",
+          publicUrl: "./files/CHORUS_2020/questionnaire.docx"
+        },
         {
           name: "Household Survey Data",
           group: "Datasets",
