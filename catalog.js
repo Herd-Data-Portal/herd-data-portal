@@ -7,8 +7,8 @@ window.HERD_CATALOG = {
       year: 2020,
       title: "CHORUS",
       folderName: "CHORUS_2020",
-      types: [{ name: ".pdf", count: 1 }],
-      groups: [{ name: "Report", count: 1 }],
+      types: [{ name: ".pdf", count: 1 }, { name: ".csv", count: 1 }, { name: ".xlsx", count: 1 }],
+      groups: [{ name: "Report", count: 1 }, { name: "Datasets", count: 3 }, { name: "Tools", count: 2 }],
       files: [
         {
           name: "CHORUS Report.pdf",
