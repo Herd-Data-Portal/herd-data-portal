@@ -1,7 +1,7 @@
 window.HERD_CATALOG = {
   mode: "public",
   years: [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
-  requestFormUrl: "https://forms.office.com/YOUR-FORM-LINK",
+  requestFormUrl: "https://forms.cloud.microsoft/r/sdQecHfi3H",
   projects: [
     {
       year: 2020,
