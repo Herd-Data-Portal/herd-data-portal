@@ -74,7 +74,11 @@
     top.append(element("span", "file-total", `${files.length} file${files.length === 1 ? "" : "s"} found`));
     card.append(top);
     card.append(element("h3", "", project.title || project.folderName || "Untitled project"));
-    card.append(element("p", "folder-label", isReview ? "Folder label — project title and year not yet verified" : "HERD International project"));
+    if (project.description && !isReview) {
+      card.append(element("p", "project-desc", project.description));
+    } else {
+      card.append(element("p", "folder-label", isReview ? "Folder label — project title and year not yet verified" : "HERD International project"));
+    }
     const groupText = (project.groups || []).map((group) => `${group.name}: ${group.count}`).join(" · ");
     card.append(element("p", `resource-line${files.length ? "" : " muted"}`, files.length ? groupText || "Files available for review" : "No files found in this local folder; this does not prove that the project has no data."));
 
