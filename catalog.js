@@ -15,7 +15,7 @@ window.HERD_CATALOG = {
           group: "Report",
           type: ".pdf",
           access: "public",
-          publicUrl: "./files/chorus-report.pdf"
+          publicUrl: "./files/CHORUS_2020/chorus-report.pdf"
         },
         {
           name: "Household Survey Data",
