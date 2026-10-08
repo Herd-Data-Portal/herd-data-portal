@@ -1,4 +1,4 @@
-# HERD International — Research Data Portal
+# HERD International : Research Data Portal
 
 Explore HERD International's research data resources from **2014 to 2026**.
 
