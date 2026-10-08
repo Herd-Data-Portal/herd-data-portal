@@ -38,7 +38,7 @@ window.HERD_CATALOG = {
       year: 2024,
       title: "REACT",
       folderName: "REACT_2024",
-      description: "REACT is a community health research project conducted in Budhanilkantha Ward 4 & 7. It includes household census data, family health records, GPS mapping data, and analysis code. Report and summary outputs are available; full datasets are available on request.",
+      description: "The REACT project which stands for Resilient and Equitable Health Workforce to Address Climate Threats—is a four-year research initiative (2025–2028) aimed at strengthening the capacity and responsiveness of the health workforce to withstand climate-related health crises. Funded by the UK's National Institute for Health and Care Research (NIHR), the project is carried out by an international consortium that includes the Liverpool School of Tropical Medicine (LSTM) in the UK, CeSHHAR in Zimbabwe, and HERD International in Nepal. In Nepal, HERD International focuses its research and interventions in specific local regions—namely Chandannath Municipality and Ghorahi Sub-metropolitan City—to evaluate health system climate preparedness, co-design gender-equitable and context-sensitive local solutions, and promote evidence-based policy uptake to build long-term institutional resilience against climate shocks",
       types: [{ name: ".pdf", count: 1 }, { name: ".csv", count: 1 }, { name: ".xlsx", count: 1 }],
       groups: [{ name: "Report", count: 1 }, { name: "Datasets", count: 3 }, { name: "Tools", count: 2 }],
       files: [
