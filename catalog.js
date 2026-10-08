@@ -33,8 +33,8 @@ window.HERD_CATALOG = {
           publicUrl: ""
         }
       ]
-    }
-        {
+    },
+    {
       year: 2024,
       title: "REACT",
       folderName: "REACT_2024",
