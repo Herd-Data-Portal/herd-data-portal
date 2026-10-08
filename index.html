@@ -6,6 +6,7 @@
   <meta name="description" content="Browse approved HERD International research data resources by year and project.">
   <meta name="robots" content="noindex, nofollow">
   <title>Data catalogue | HERD International</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <script src="./catalog.js" defer></script>
   <script src="./app.js" defer></script>
@@ -13,7 +14,7 @@
 <body>
   <header class="site-header">
     <div class="wrap header-row">
-      <div class="brand"><span class="brand-mark" aria-hidden="true">H</span><span>HERD <strong>International</strong></span></div>
+      <div class="brand"><img class="brand-logo" src="./logo.svg" alt="HERD International logo" width="120"><span>Research <strong>Data Portal</strong></span></div>
       <span class="eyebrow">Research data catalogue</span>
     </div>
   </header>
@@ -23,12 +24,30 @@
       <div class="wrap">
         <span class="kicker">Discover research resources</span>
         <h1>Evidence worth finding.<br><em>Collaboration worth starting.</em></h1>
-        <p>Browse project records by year, find available resources, and learn how to request access. Only reviewed records are published here.</p>
+        <p>Browse project records by year, find available resources, and learn how to request access. Only reviewed records should be published here.</p>
         <div id="review-notice" class="review-notice" hidden><strong>Internal review preview — not for publication.</strong> Folder labels and file names below have not been approved for public display. No files are linked or downloadable.</div>
         <div class="stats" aria-label="Catalogue summary">
           <div><strong id="year-count">0</strong><span>Years surveyed</span></div>
           <div><strong id="project-count">0</strong><span>Project folders</span></div>
           <div><strong id="file-count">0</strong><span>Files inventoried</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about wrap" aria-labelledby="about-title">
+      <div><span class="kicker dark">ABOUT HERD</span>
+        <h2 id="about-title">Generating evidence, improving lives</h2>
+        <p class="about-text">HERD International is a leading research and development organization working throughout Nepal. Our mission is to produce high-quality, context-specific research that informs policies and practices, with a strong emphasis on advancing health equity for marginalized and vulnerable communities.</p>
+        <div class="link-row">
+          <a class="btn-link" href="https://herdint.com" target="_blank" rel="noopener noreferrer">🏠 herdint.com</a>
+          <a class="btn-link" href="mailto:info@herdint.com">✉️ info@herdint.com</a>
+          <a class="btn-link" href="https://herdint.com/partner/" target="_blank" rel="noopener noreferrer">🤝 Our partners</a>
+        </div>
+      </div>
+      <div class="theme-areas">
+        <h3>Thematic areas</h3>
+        <div class="tags">
+          <span class="tag">Health Systems</span><span class="tag">Agriculture & Food Security</span><span class="tag">AMR</span><span class="tag">Non-Communicable Disease</span><span class="tag">Nutrition</span><span class="tag">Maternal & Child Health</span><span class="tag">Climate Change</span><span class="tag">NTD</span>
         </div>
       </div>
     </section>
