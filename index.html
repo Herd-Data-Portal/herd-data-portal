@@ -14,7 +14,7 @@
 <body>
   <header class="site-header">
     <div class="wrap header-row">
-      <div class="brand"><img class="brand-logo" src="./logo.svg" alt="HERD International logo" width="120"></div>
+      <div class="brand"><img class="brand-logo" src="./logo.svg" alt="HERD International logo" width="120"><span>Research <strong>Data Portal</strong></span></div>
       <span class="eyebrow">Research data catalogue</span>
     </div>
   </header>
@@ -24,7 +24,7 @@
       <div class="wrap">
         <span class="kicker">Discover research resources</span>
         <h1>Evidence worth finding.<br><em>Collaboration worth starting.</em></h1>
-        <p>Browse project records by year, find available resources, and learn how to request access. Only reviewed records are published here.</p>
+        <p>Browse project records by year, find available resources, and learn how to request access. Only reviewed records should be published here.</p>
         <div id="review-notice" class="review-notice" hidden><strong>Internal review preview — not for publication.</strong> Folder labels and file names below have not been approved for public display. No files are linked or downloadable.</div>
         <div class="stats" aria-label="Catalogue summary">
           <div><strong id="year-count">0</strong><span>Years surveyed</span></div>
@@ -46,8 +46,14 @@
       </div>
       <div class="theme-areas">
         <h3>Thematic areas</h3>
-        <div class="tags">
-          <span class="tag">Health Systems</span><span class="tag">Agriculture & Food Security</span><span class="tag">AMR</span><span class="tag">Non-Communicable Disease</span><span class="tag">Nutrition</span><span class="tag">Maternal & Child Health</span><span class="tag">Climate Change</span><span class="tag">NTD</span>
+        <p class="theme-hint">Select a theme to filter the catalogue.</p>
+        <div class="tags" id="theme-tags">
+          <button class="tag" type="button" data-theme="Health Systems Strengthening">Health Systems Strengthening</button>
+          <button class="tag" type="button" data-theme="Antimicrobial Resistance (AMR)">Antimicrobial Resistance (AMR)</button>
+          <button class="tag" type="button" data-theme="Climate Change and Health">Climate Change and Health</button>
+          <button class="tag" type="button" data-theme="Livelihoods and Health">Livelihoods and Health</button>
+          <button class="tag" type="button" data-theme="Digital Solution">Digital Solution</button>
+          <button class="tag" type="button" data-theme="Nutrition">Nutrition</button>
         </div>
       </div>
     </section>
@@ -62,6 +68,8 @@
         <input id="search" type="search" placeholder="Search projects, formats or resource types…" autocomplete="off">
         <label for="year">Year folder</label>
         <select id="year"><option value="">All years</option></select>
+        <label for="type">Resource type</label>
+        <select id="type"><option value="">All resource types</option></select>
         <label class="check"><input id="include-empty" type="checkbox" checked><span>Show folders with no files found</span></label>
       </div>
       <div id="project-list" class="project-grid"></div>
@@ -71,12 +79,22 @@
       </div>
     </section>
 
+    <section class="faq wrap" aria-labelledby="faq-title">
+      <div><span class="kicker dark">QUESTIONS</span><h2 id="faq-title">Frequently asked</h2></div>
+      <div class="faq-list">
+        <details><summary>How do I request a dataset?</summary><p>Click <strong>Request access</strong> next to the dataset and complete the short form. HERD's data team reviews the request and replies within a few working days.</p></details>
+        <details><summary>Can I use the data for my own research?</summary><p>Yes, once access is approved. Please cite the project and HERD International, and follow any conditions agreed at the time of approval.</p></details>
+        <details><summary>Will I get raw or participant-level data?</summary><p>Datasets are shared in the form approved by the project owner, which may be de-identified or aggregated. Sensitive and identifiable data are rarely released.</p></details>
+        <details><summary>Can HERD support a joint study?</summary><p>Yes. Use the partner or contact links above, or email <a href="mailto:info@herdint.com">info@herdint.com</a> with a short concept note.</p></details>
+      </div>
+    </section>
+
     <section class="access-note wrap" aria-labelledby="access-title">
       <div><span class="kicker dark">DATA ACCESS</span><h2 id="access-title">Publication and access are separate decisions.</h2></div>
       <p>Only explicitly approved files receive a public download link. Other files remain with HERD and may be described as request-only only when the project owner authorises it. A listed folder does not imply permission to share its contents.</p>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="wrap">HERD International · Catalogue prototype · No project records are public until approved.</div></footer>
+  <footer class="site-footer"><div class="wrap">HERD International · Research Data Portal · Listing approved public resources only.</div></footer>
 </body>
 </html>

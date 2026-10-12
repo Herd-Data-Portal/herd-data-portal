@@ -1,4 +1,4 @@
-# HERD International : Research Data Portal
+# HERD International — Research Data Portal
 
 Explore HERD International's research data resources from **2014 to 2026**.
 
@@ -40,6 +40,6 @@ When you submit a request, HERD International's data team reviews your purpose a
 
 HERD International is a research and development organization working throughout Nepal, dedicated to producing high-quality, context-specific evidence that informs policies and practices for health equity. More: [herdint.com](https://herdint.com)
 
-**Contact:** info@herdint.com or data.science@herdint.com · +977-01-5914875 · Lalitpur, Nepal
+**Contact:** info@herdint.com · +977-01-5914875 · Lalitpur, Nepal
 
 © 2026 HERD International
