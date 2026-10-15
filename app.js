@@ -100,12 +100,84 @@
     return item;
   }
 
+  const FOLDER_ALIASES = {
+      "tools": "Data Collection Tools",
+      "data collection tools": "Data Collection Tools",
+      "questionnaires": "Data Collection Tools",
+      "tool": "Data Collection Tools",
+      "field manual": "Field Manual",
+      "manuals": "Field Manual",
+      "manual": "Field Manual",
+      "report": "Report",
+      "reports": "Report",
+      "datasets": "Datasets",
+      "data": "Datasets",
+      "publications": "Publications",
+      "others": "Others",
+      "syntax": "Others",
+      "code": "Others"
+    };
+
+  function cloneTree(nodes) {
+    return (nodes || []).map((node) => ({ name: node.name, subfolders: cloneTree(node.subfolders) }));
+  }
+
+  function findFolder(nodes, name) {
+    const target = name.toLocaleLowerCase();
+    return nodes.find((node) => node.name.toLocaleLowerCase() === target);
+  }
+
+  function treeWithFiles(project) {
+    const tree = cloneTree(project.folders);
+    for (const file of project.files || []) {
+      const raw = String(file.group || "").toLocaleLowerCase();
+      const folderName = FOLDER_ALIASES[raw] || file.group || "Others";
+      let folder = findFolder(tree, folderName);
+      if (!folder) {
+        folder = { name: folderName, subfolders: [] };
+        tree.push(folder);
+      }
+      folder.subfolders = folder.subfolders || [];
+      folder.subfolders.push({
+        name: file.name,
+        file: true,
+        type: file.type,
+        access: file.access,
+        publicUrl: file.publicUrl
+      });
+    }
+    return tree;
+  }
+
   function renderTree(nodes) {
     const list = element("ul", "tree");
     for (const node of nodes || []) {
       const item = element("li");
+      if (node.file) {
+        item.className = "tree-file-item";
+        item.append(element("span", "tree-file-name", node.name));
+        if (node.type) item.append(element("span", "tree-file-type", node.type));
+        if (node.access === "public") {
+          const target = safeUrl(node.publicUrl);
+          if (target) {
+            const link = element("a", "tree-file-link", "Download");
+            link.href = target;
+            link.rel = "noopener noreferrer";
+            item.append(link);
+          }
+        } else if (node.access === "request") {
+          const target = safeUrl(catalog.requestFormUrl);
+          if (target) {
+            const link = element("a", "tree-file-link", "Request");
+            link.href = target;
+            link.rel = "noopener noreferrer";
+            item.append(link);
+          }
+        }
+        list.append(item);
+        continue;
+      }
       item.append(element("span", "tree-label", node.name));
-      if (node.count) item.append(element("span", "tree-count", `${node.count} item${node.count === 1 ? "" : "s"}`));
       if (node.subfolders && node.subfolders.length) item.append(renderTree(node.subfolders));
       list.append(item);
     }
@@ -176,7 +248,7 @@
     if (project.folders && project.folders.length && !isReview) {
       const structure = element("details", "file-section");
       structure.append(element("summary", "", "Project folder structure"));
-      structure.append(renderTree(project.folders));
+      structure.append(renderTree(treeWithFiles(project)));
       card.append(structure);
     }
 
