@@ -149,8 +149,9 @@
     return tree;
   }
 
-  function renderTree(nodes) {
+  function renderTree(nodes, numbered) {
     const list = element("ul", "tree");
+    let index = 0;
     for (const node of nodes || []) {
       const item = element("li");
       if (node.file) {
@@ -177,8 +178,12 @@
         list.append(item);
         continue;
       }
+      if (numbered && !node.file) {
+        index += 1;
+        item.append(element("span", "tree-num", `${index}.`));
+      }
       item.append(element("span", "tree-label", node.name));
-      if (node.subfolders && node.subfolders.length) item.append(renderTree(node.subfolders));
+      if (node.subfolders && node.subfolders.length) item.append(renderTree(node.subfolders, false));
       list.append(item);
     }
     return list;
@@ -226,7 +231,7 @@
       card.append(row);
     }
 
-    if (project.types && project.types.length) {
+    if (project.types && project.types.length && false) {
       const types = element("div", "type-list");
       for (const type of project.types) types.append(element("span", "type-tag", `${type.name.toUpperCase()} ${type.count}`));
       card.append(types);
@@ -246,13 +251,14 @@
     card.append(foot);
 
     if (project.folders && project.folders.length && !isReview) {
-      const structure = element("details", "file-section");
-      structure.append(element("summary", "", "Project folder structure"));
-      structure.append(renderTree(treeWithFiles(project)));
+      const structure = element("details", "file-section structure-open");
+      structure.open = true;
+      structure.append(element("summary", "", "Project contents"));
+      structure.append(renderTree(treeWithFiles(project), true));
       card.append(structure);
     }
 
-    if (files.length) {
+    if (files.length && isReview) {
       const details = element("details", "file-section");
       details.append(element("summary", "", isReview ? "View internal file inventory" : "View listed resources"));
       const fileList = element("ul", "file-list");
