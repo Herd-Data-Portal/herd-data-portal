@@ -100,6 +100,31 @@
     return item;
   }
 
+  function renderTree(nodes) {
+    const list = element("ul", "tree");
+    for (const node of nodes || []) {
+      const item = element("li");
+      item.append(element("span", "tree-label", node.name));
+      if (node.count) item.append(element("span", "tree-count", `${node.count} item${node.count === 1 ? "" : "s"}`));
+      if (node.subfolders && node.subfolders.length) item.append(renderTree(node.subfolders));
+      list.append(item);
+    }
+    return list;
+  }
+
+  function contentsFor(project) {
+    const files = Array.isArray(project.files) ? project.files : [];
+    if (files.length) {
+      const counts = new Map();
+      for (const file of files) {
+        const name = file.group || "Project root";
+        counts.set(name, (counts.get(name) || 0) + 1);
+      }
+      return [...counts].map(([name, count]) => ({ name, count, listed: true }));
+    }
+    return (project.folders || []).map((folder) => ({ name: folder.name, count: 0, listed: false }));
+  }
+
   function renderProject(project) {
     const card = element("article", "project-card");
     const top = element("div", "card-top");
@@ -118,8 +143,16 @@
     } else {
       card.append(element("p", "folder-label", isReview ? "Folder label — project title and year not yet verified" : "HERD International project"));
     }
-    const groupText = (project.groups || []).map((group) => `${group.name}: ${group.count}`).join(" · ");
-    card.append(element("p", `resource-line${files.length ? "" : " muted"}`, files.length ? groupText || "Files available for review" : "No files found in this local folder; this does not prove that the project has no data."));
+    const contents = contentsFor(project);
+    if (contents.length) {
+      const row = element("div", "contents");
+      row.append(element("span", "contents-label", "Contains"));
+      for (const item of contents) {
+        row.append(element("span", `contents-chip${item.listed ? "" : " muted"}`,
+          item.listed ? `${item.name} (${item.count})` : item.name));
+      }
+      card.append(row);
+    }
 
     if (project.types && project.types.length) {
       const types = element("div", "type-list");
@@ -139,6 +172,13 @@
     const foot = element("div", "card-foot");
     foot.append(element("span", "", isReview ? "All access decisions pending HERD review" : "Only approved records and links are published"));
     card.append(foot);
+
+    if (project.folders && project.folders.length && !isReview) {
+      const structure = element("details", "file-section");
+      structure.append(element("summary", "", "Project folder structure"));
+      structure.append(renderTree(project.folders));
+      card.append(structure);
+    }
 
     if (files.length) {
       const details = element("details", "file-section");
