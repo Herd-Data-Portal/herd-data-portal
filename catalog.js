@@ -167,7 +167,59 @@
         ]
       }),
 
- // R4R_2020 
+ // A4A_2024 
+      createProject({
+        year: 2024,
+        title: "A4A",
+        folderName: "A4A_2020",
+        themes: ["Health Systems Strengthening", 'Livelihoods and Health', "Digital Solution"],
+        description:
+          "Analysis for Action is a five-year project (2023 to 2028), funded by Wellcome, which aims to equip National Statistical Offices (NSOs) with skills and tools to support evidence-based preparedness and response to health emergencies.",
+        files: [
+          {
+            name: "A4A Report",
+            group: "Report",
+            subfolder: "",
+            type: ".pdf",
+            access: "public",
+            publicUrl: "https://zenodo.org/records/24332463/files/chorus-report.pdf?download=1"
+          },
+          {
+            name: "Survey Questionnaire",
+            group: "Tools",
+            subfolder: "Quantitative Tools",
+            type: ".docx",
+            access: "request",
+            publicUrl: ""
+          },
+          {
+            name: "Qualitative Interview Guide",
+            group: "Tools",
+            subfolder: "Qualitative Tools",
+            type: ".docx",
+            access: "request",
+            publicUrl: ""
+          },
+          {
+            name: "Household Survey Data",
+            group: "Datasets",
+            subfolder: "Final datasets",
+            type: ".csv",
+            access: "request",
+            publicUrl: ""
+          },
+          {
+            name: "CHORUS Analysis Syntax",
+            group: "Datasets",
+            subfolder: "Syntax",
+            type: ".do",
+            access: "public",
+            publicUrl: "" // TODO: Add Zenodo URL when uploaded
+          }
+        ]
+      }),
+
+       // PVS_2023 
       createProject({
         year: 2020,
         title: "R4R",
@@ -219,59 +271,7 @@
         ]
       }),
 
-       // R4R_2020 
-      createProject({
-        year: 2020,
-        title: "R4R",
-        folderName: "R4R_2020",
-        themes: ["Climate Change and Health", "Health Systems Strengthening", 'Livelihoods and Health'],
-        description:
-          "ReBUILD for Resilience is an international research consortium funded by the UK government, dedicated to strengthening resilience and building stronger systems for health across multiple levels and sectors in fragile and shock-prone settings, namely Lebanon, Myanmar, Nepal and Sierra Leone. These settings face significant challenges due to fragility, violence, conflict and other shocks, eroding efforts to build healthy, equitable and prosperous societies. Innovative, timely and contextually tailored evidence generated in partnership with key local and national stakeholders is critical to developing and sustaining resilient health systems, which are currently lacking in these regions. Through this consortium, we aim to generate high quality, practical, multidisciplinary, operationally-relevant and scalable health system research in these settings.",
-        files: [
-          {
-            name: "R4R Report",
-            group: "Report",
-            subfolder: "",
-            type: ".pdf",
-            access: "public",
-            publicUrl: "https://zenodo.org/records/24332463/files/chorus-report.pdf?download=1"
-          },
-          {
-            name: "Survey Questionnaire",
-            group: "Tools",
-            subfolder: "Quantitative Tools",
-            type: ".docx",
-            access: "request",
-            publicUrl: ""
-          },
-          {
-            name: "Qualitative Interview Guide",
-            group: "Tools",
-            subfolder: "Qualitative Tools",
-            type: ".docx",
-            access: "request",
-            publicUrl: ""
-          },
-          {
-            name: "Household Survey Data",
-            group: "Datasets",
-            subfolder: "Final datasets",
-            type: ".csv",
-            access: "request",
-            publicUrl: ""
-          },
-          {
-            name: "CHORUS Analysis Syntax",
-            group: "Datasets",
-            subfolder: "Syntax",
-            type: ".do",
-            access: "public",
-            publicUrl: "" // TODO: Add Zenodo URL when uploaded
-          }
-        ]
-      }),
-
-       // R4R_2020 
+       // USAID_HL_2024
       createProject({
         year: 2020,
         title: "R4R",
