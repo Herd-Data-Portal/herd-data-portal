@@ -28,18 +28,18 @@
 
   const CODE_EXTENSIONS = [".r", ".rmd", ".do", ".py", ".ipynb", ".sql"];
   const CATEGORY_RULES = [
-    { value: "datasets", label: "Datasets", test: /dataset|raw|final|household|census|survey data|urban health|data\b/i },
+    { value: "code", label: "Code & scripts", test: /syntax|code|script|analysis/i },
     { value: "tools", label: "Tools & questionnaires", test: /tool|manual|questionnaire|guide|instrument/i },
     { value: "reports", label: "Reports & publications", test: /report|publication|brief|factsheet|policy|output/i },
-    { value: "code", label: "Code & scripts", test: /syntax|code|script|analysis/i }
+    { value: "datasets", label: "Datasets", test: /dataset|raw|final|household|census|survey data|urban health|data\b/i }
   ];
 
   function categoryFor(file) {
     const code = CODE_EXTENSIONS.includes(String(file.type || "").toLowerCase());
-    const haystack = `${file.group || ""} ${file.name || ""}`;
+    if (code) return "code";
+    const haystack = `${file.group || ""} ${file.subfolder || ""} ${file.name || ""}`;
     const rule = CATEGORY_RULES.find((entry) => entry.test.test(haystack));
     if (rule) return rule.value;
-    if (code) return "code";
     return "datasets";
   }
 
@@ -77,13 +77,15 @@
   function renderFile(file) {
     const item = element("li");
     const status = file.access === "public" ? "Approved public download" : file.access === "request" ? "Request-only" : "Unreviewed; not downloadable";
+    const location = file.subfolder ? `${file.group || "Project root"} / ${file.subfolder}` : (file.group || "Project root");
     item.append(element("strong", "", file.name));
-    item.append(element("small", "", `${file.group || "Project root"} · ${file.type || "File"} · ${status}`));
+    item.append(element("small", "", `${location} · ${file.type || "File"} · ${status}`));
     if (!isReview && file.access === "public") {
       const target = safeUrl(file.publicUrl);
       if (target) {
         const link = element("a", "", "Download approved file");
         link.href = target;
+        link.target = "_blank";
         link.rel = "noopener noreferrer";
         item.append(link);
       }
@@ -93,6 +95,7 @@
       if (target) {
         const link = element("a", "", "Request access");
         link.href = target;
+        link.target = "_blank";
         link.rel = "noopener noreferrer";
         item.append(link);
       }
@@ -101,22 +104,22 @@
   }
 
   const FOLDER_ALIASES = {
-      "tools": "Data Collection Tools",
-      "data collection tools": "Data Collection Tools",
-      "questionnaires": "Data Collection Tools",
-      "tool": "Data Collection Tools",
-      "field manual": "Field Manual",
-      "manuals": "Field Manual",
-      "manual": "Field Manual",
-      "report": "Report",
-      "reports": "Report",
-      "datasets": "Datasets",
-      "data": "Datasets",
-      "publications": "Publications",
-      "others": "Others",
-      "syntax": "Others",
-      "code": "Others"
-    };
+    "tools": "Data Collection Tools",
+    "data collection tools": "Data Collection Tools",
+    "questionnaires": "Data Collection Tools",
+    "tool": "Data Collection Tools",
+    "field manual": "Field Manual",
+    "manuals": "Field Manual",
+    "manual": "Field Manual",
+    "report": "Report",
+    "reports": "Report",
+    "datasets": "Datasets",
+    "data": "Datasets",
+    "publications": "Publications",
+    "others": "Others",
+    "syntax": "Others",
+    "code": "Others"
+  };
 
   function cloneTree(nodes) {
     return (nodes || []).map((node) => ({ name: node.name, subfolders: cloneTree(node.subfolders) }));
@@ -124,7 +127,12 @@
 
   function findFolder(nodes, name) {
     const target = name.toLocaleLowerCase();
-    return nodes.find((node) => node.name.toLocaleLowerCase() === target);
+    return nodes.find((node) => !node.file && node.name.toLocaleLowerCase() === target);
+  }
+
+  function hasAnyFiles(node) {
+    if (node.file) return true;
+    return (node.subfolders || []).some(hasAnyFiles);
   }
 
   function treeWithFiles(project) {
@@ -138,7 +146,20 @@
         tree.push(folder);
       }
       folder.subfolders = folder.subfolders || [];
-      folder.subfolders.push({
+
+      let targetContainer = folder.subfolders;
+      const subName = String(file.subfolder || "").trim();
+      if (subName) {
+        let subFolder = findFolder(folder.subfolders, subName);
+        if (!subFolder) {
+          subFolder = { name: subName, subfolders: [] };
+          folder.subfolders.push(subFolder);
+        }
+        subFolder.subfolders = subFolder.subfolders || [];
+        targetContainer = subFolder.subfolders;
+      }
+
+      targetContainer.push({
         name: file.name,
         file: true,
         type: file.type,
@@ -146,6 +167,12 @@
         publicUrl: file.publicUrl
       });
     }
+
+    // Keep all 6 top-level folders, but hide empty subfolders until they have files
+    for (const folder of tree) {
+      folder.subfolders = (folder.subfolders || []).filter(hasAnyFiles);
+    }
+
     return tree;
   }
 
@@ -163,6 +190,7 @@
           if (target) {
             const link = element("a", "tree-file-link", "Download");
             link.href = target;
+            link.target = "_blank";
             link.rel = "noopener noreferrer";
             item.append(link);
           }
@@ -171,6 +199,7 @@
           if (target) {
             const link = element("a", "tree-file-link", "Request");
             link.href = target;
+            link.target = "_blank";
             link.rel = "noopener noreferrer";
             item.append(link);
           }
@@ -282,7 +311,7 @@
         ...(project.themes || []),
         ...(project.types || []).map((type) => type.name),
         ...(project.groups || []).map((group) => group.name),
-        ...(project.files || []).map((file) => file.name)
+        ...(project.files || []).flatMap((file) => [file.name, file.subfolder, file.type])
       ].filter(Boolean).join(" ").toLocaleLowerCase();
       return haystack.includes(query);
     });
