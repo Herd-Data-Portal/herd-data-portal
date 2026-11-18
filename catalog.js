@@ -116,15 +116,15 @@
       }),
 
       createProject({
-        year: 2024,
-        title: "REACT",
-        folderName: "REACT_2024",
-        themes: ["Climate Change and Health", "Health Systems Strengthening"],
+        year: 2020,
+        title: "R4R",
+        folderName: "R4R_2020",
+        themes: ["Climate Change and Health", "Health Systems Strengthening", 'Livelihoods and Health'],
         description:
-          "REACT (Resilient and Equitable Health Workforce to Address Climate Threats) is a four-year research initiative (2025-2028) led by the Liverpool School of Tropical Medicine with CeSHHAR Zimbabwe and HERD International Nepal. In Nepal, HERD works in Chandannath Municipality and Ghorahi Sub-metropolitan City to strengthen health-system climate preparedness, co-design gender-equitable local solutions, and support evidence-based policy uptake.",
+          "ReBUILD for Resilience is an international research consortium funded by the UK government, dedicated to strengthening resilience and building stronger systems for health across multiple levels and sectors in fragile and shock-prone settings, namely Lebanon, Myanmar, Nepal and Sierra Leone. These settings face significant challenges due to fragility, violence, conflict and other shocks, eroding efforts to build healthy, equitable and prosperous societies. Innovative, timely and contextually tailored evidence generated in partnership with key local and national stakeholders is critical to developing and sustaining resilient health systems, which are currently lacking in these regions. Through this consortium, we aim to generate high quality, practical, multidisciplinary, operationally-relevant and scalable health system research in these settings.",
         files: [
           {
-            name: "REACT Project Report",
+            name: "R4R Project Report",
             group: "Report",
             subfolder: "",
             type: ".pdf",
