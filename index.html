@@ -4,9 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Browse approved HERD International research data resources by year and project.">
+  <!-- Remove the noindex line below once the catalogue is officially ready for search engines -->
   <meta name="robots" content="noindex, nofollow">
   <title>Data catalogue | HERD International</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
   <script src="./catalog.js" defer></script>
   <script src="./app.js" defer></script>
@@ -14,7 +17,9 @@
 <body>
   <header class="site-header">
     <div class="wrap header-row">
-      <div class="brand"><img class="brand-logo" src="./logo.svg" alt="HERD International logo" width="120"></div>
+      <div class="brand">
+        <img class="brand-logo" src="./logo.svg" alt="HERD International logo" width="120">
+      </div>
       <span class="eyebrow">Research data catalogue</span>
     </div>
   </header>
@@ -25,7 +30,9 @@
         <span class="kicker">Discover research resources</span>
         <h1>Evidence worth finding.<br><em>Collaboration worth starting.</em></h1>
         <p>Browse project records by year, find available resources, and learn how to request access. Only reviewed records should be published here.</p>
-        <div id="review-notice" class="review-notice" hidden><strong>Internal review preview — not for publication.</strong> Folder labels and file names below have not been approved for public display. No files are linked or downloadable.</div>
+        <div id="review-notice" class="review-notice" hidden>
+          <strong>Internal review preview — not for publication.</strong> Folder labels and file names below have not been approved for public display. No files are linked or downloadable.
+        </div>
         <div class="stats" aria-label="Catalogue summary">
           <div><strong id="year-count">0</strong><span>Years surveyed</span></div>
           <div><strong id="project-count">0</strong><span>Project folders</span></div>
@@ -35,7 +42,8 @@
     </section>
 
     <section class="about wrap" aria-labelledby="about-title">
-      <div><span class="kicker dark">ABOUT HERD</span>
+      <div>
+        <span class="kicker dark">ABOUT HERD</span>
         <h2 id="about-title">Generating evidence, improving lives</h2>
         <p class="about-text">HERD International is a leading research and development organization working throughout Nepal. Our mission is to produce high-quality, context-specific research that informs policies and practices, with a strong emphasis on advancing health equity for marginalized and vulnerable communities.</p>
         <div class="link-row">
@@ -60,7 +68,10 @@
 
     <section class="catalogue wrap" aria-labelledby="browse-title">
       <div class="section-heading">
-        <div><span class="kicker dark">THE CATALOGUE</span><h2 id="browse-title">Browse projects</h2></div>
+        <div>
+          <span class="kicker dark">THE CATALOGUE</span>
+          <h2 id="browse-title">Browse projects</h2>
+        </div>
         <p id="result-count" role="status" aria-live="polite"></p>
       </div>
       <div class="filters">
@@ -70,7 +81,10 @@
         <select id="year"><option value="">All years</option></select>
         <label for="type">Resource type</label>
         <select id="type"><option value="">All resource types</option></select>
-        <label class="check"><input id="include-empty" type="checkbox" checked><span>Show folders with no files found</span></label>
+        <label class="check">
+          <input id="include-empty" type="checkbox" checked>
+          <span>Show folders with no files found</span>
+        </label>
       </div>
       <div id="project-list" class="project-grid"></div>
       <div id="empty-state" class="empty-state" hidden>
@@ -80,21 +94,41 @@
     </section>
 
     <section class="faq wrap" aria-labelledby="faq-title">
-      <div><span class="kicker dark">QUESTIONS</span><h2 id="faq-title">Frequently asked</h2></div>
+      <div>
+        <span class="kicker dark">QUESTIONS</span>
+        <h2 id="faq-title">Frequently asked</h2>
+      </div>
       <div class="faq-list">
-        <details><summary>How do I request a dataset?</summary><p>Click <strong>Request access</strong> next to the dataset and complete the short form. HERD's data team reviews the request and replies within a few working days.</p></details>
-        <details><summary>Can I use the data for my own research?</summary><p>Yes, once access is approved. Please cite the project and HERD International, and follow any conditions agreed at the time of approval.</p></details>
-        <details><summary>Will I get raw or participant-level data?</summary><p>Datasets are shared in the form approved by the project owner, which may be de-identified or aggregated. Sensitive and identifiable data are rarely released.</p></details>
-        <details><summary>Can HERD support a joint study?</summary><p>Yes. Use the partner or contact links above, or email <a href="mailto:info@herdint.com">info@herdint.com</a> with a short concept note.</p></details>
+        <details>
+          <summary>How do I request a dataset?</summary>
+          <p>Click <strong>Request</strong> next to the dataset and complete the short form. HERD's data team reviews the request and replies within a few working days.</p>
+        </details>
+        <details>
+          <summary>Can I use the data for my own research?</summary>
+          <p>Yes, once access is approved. Please cite the project and HERD International, and follow any conditions agreed at the time of approval.</p>
+        </details>
+        <details>
+          <summary>Will I get raw or participant-level data?</summary>
+          <p>Datasets are shared in the form approved by the project owner, which may be de-identified or aggregated. Sensitive and identifiable data are rarely released.</p>
+        </details>
+        <details>
+          <summary>Can HERD support a joint study?</summary>
+          <p>Yes. Use the partner or contact links above, or email <a href="mailto:info@herdint.com">info@herdint.com</a> with a short concept note.</p>
+        </details>
       </div>
     </section>
 
     <section class="access-note wrap" aria-labelledby="access-title">
-      <div><span class="kicker dark">DATA ACCESS</span><h2 id="access-title">Publication and access are separate decisions.</h2></div>
+      <div>
+        <span class="kicker dark">DATA ACCESS</span>
+        <h2 id="access-title">Publication and access are separate decisions.</h2>
+      </div>
       <p>Only explicitly approved files receive a public download link. Other files remain with HERD and may be described as request-only only when the project owner authorises it. A listed folder does not imply permission to share its contents.</p>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="wrap">HERD International · Research Data Portal · Listing approved public resources only.</div></footer>
+  <footer class="site-footer">
+    <div class="wrap">HERD International · Research Data Portal · Listing approved public resources only.</div>
+  </footer>
 </body>
 </html>
