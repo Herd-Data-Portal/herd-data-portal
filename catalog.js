@@ -226,7 +226,7 @@
         folderName: "PVS_2023",
         themes: ["Health Systems Strengthening", "Livelihoods and Health"],
         description:
-          "Healthcare accessibility is increasing worldwide as nations strive for Universal Health Coverage (UHC). However, access alone does not always translate to better health outcomes. Each year, five million people die from treatable conditions despite seeking medical care, highlighting critical gaps in the quality of care. This issue highlights the need for comprehensive assessments of health system performance that encompass both access and quality of care."
+          "Healthcare accessibility is increasing worldwide as nations strive for Universal Health Coverage (UHC). However, access alone does not always translate to better health outcomes. Each year, five million people die from treatable conditions despite seeking medical care, highlighting critical gaps in the quality of care. This issue highlights the need for comprehensive assessments of health system performance that encompass both access and quality of care.",
         files: [
           {
             name: "PVS Report",
@@ -278,7 +278,7 @@
         folderName: "USAID_HL_2024",
         themes: ["Health Systems Strengthening", "Livelihoods and Health", "Digital Solution"],
         description:
-          "USAID/Nepal awarded the five-year USAID Health Learning to HERD International in August 2024. USAID Health Learning assists USAID/Nepal’s Health Office and its implementing partners to adopt uniform and systematic Monitoring, Evaluation, Research and Learning (MERL) approaches and advance broader organizational learning and development objectives."
+          "USAID/Nepal awarded the five-year USAID Health Learning to HERD International in August 2024. USAID Health Learning assists USAID/Nepal’s Health Office and its implementing partners to adopt uniform and systematic Monitoring, Evaluation, Research and Learning (MERL) approaches and advance broader organizational learning and development objectives.",
         files: [
           {
             name: "USAID HL Report",
