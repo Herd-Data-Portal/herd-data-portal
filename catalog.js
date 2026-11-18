@@ -122,7 +122,7 @@
         folderName: "R4R_2020",
         themes: ["Climate Change and Health", "Health Systems Strengthening", 'Livelihoods and Health'],
         description:
-          "ReBUILD for Resilience is an international research consortium funded by the UK government, dedicated to strengthening resilience and building stronger systems for health across multiple levels and sectors in fragile and shock-prone settings, namely Lebanon, Myanmar, Nepal and Sierra Leone. These settings face significant challenges due to fragility, violence, conflict and other shocks, eroding efforts to build healthy, equitable and prosperous societies. Innovative, timely and contextually tailored evidence generated in partnership with key local and national stakeholders is critical to developing and sustaining resilient health systems, which are currently lacking in these regions. Through this consortium, we aim to generate high quality, practical, multidisciplinary, operationally-relevant and scalable health system research in these settings.",
+          "ReBUILD for Resilience is an international research consortium funded by the UK government, dedicated to strengthening resilience and building stronger systems for health across multiple levels and sectors in fragile and shock-prone settings, namely Lebanon, Myanmar, Nepal and Sierra Leone.",
         files: [
           {
             name: "R4R Report",
