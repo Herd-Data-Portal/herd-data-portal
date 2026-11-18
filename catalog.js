@@ -67,7 +67,7 @@ window.HERD_CATALOG = {
           name: "REACT Project Report.pdf",
           group: "Report",
           type: ".pdf",
-          access: "request",
+          access: "public",
           publicUrl: "https://zenodo.org/records/24332463/files/chorus-report.pdf?download=1"
         },
         {
