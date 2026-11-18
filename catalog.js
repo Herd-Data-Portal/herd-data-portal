@@ -7,7 +7,7 @@ window.HERD_CATALOG = {
   requestFormUrl: "https://forms.cloud.microsoft/r/sdQecHfi3H",
   projects: [
     {
-      year: 2020, 
+      year: 2020,  
       title: "CHORUS",
       folderName: "CHORUS_2020",
       themes: ["Digital Solution"],
