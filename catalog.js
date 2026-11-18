@@ -66,7 +66,7 @@
     projects: [
       createProject({
         year: 2020,
-        title: "CHORUS",
+        title: "CHORUS II",
         folderName: "CHORUS_2020",
         themes: ["Digital Solution"],
         description:
