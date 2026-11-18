@@ -172,7 +172,7 @@
         year: 2024,
         title: "A4A",
         folderName: "A4A_2020",
-        themes: ["Health Systems Strengthening", 'Livelihoods and Health', "Digital Solution"],
+        themes: ["Health Systems Strengthening", "Digital Solution"],
         description:
           "Analysis for Action is a five-year project (2023 to 2028), funded by Wellcome, which aims to equip National Statistical Offices (NSOs) with skills and tools to support evidence-based preparedness and response to health emergencies.",
         files: [
@@ -221,15 +221,15 @@
 
        // PVS_2023 
       createProject({
-        year: 2020,
-        title: "R4R",
-        folderName: "R4R_2020",
-        themes: ["Climate Change and Health", "Health Systems Strengthening", 'Livelihoods and Health'],
+        year: 2023,
+        title: "PVS",
+        folderName: "PVS_2023",
+        themes: ["Health Systems Strengthening", "Livelihoods and Health"],
         description:
-          "ReBUILD for Resilience is an international research consortium funded by the UK government, dedicated to strengthening resilience and building stronger systems for health across multiple levels and sectors in fragile and shock-prone settings, namely Lebanon, Myanmar, Nepal and Sierra Leone. These settings face significant challenges due to fragility, violence, conflict and other shocks, eroding efforts to build healthy, equitable and prosperous societies. Innovative, timely and contextually tailored evidence generated in partnership with key local and national stakeholders is critical to developing and sustaining resilient health systems, which are currently lacking in these regions. Through this consortium, we aim to generate high quality, practical, multidisciplinary, operationally-relevant and scalable health system research in these settings.",
+          "Healthcare accessibility is increasing worldwide as nations strive for Universal Health Coverage (UHC). However, access alone does not always translate to better health outcomes. Each year, five million people die from treatable conditions despite seeking medical care, highlighting critical gaps in the quality of care. This issue highlights the need for comprehensive assessments of health system performance that encompass both access and quality of care."
         files: [
           {
-            name: "R4R Report",
+            name: "PVS Report",
             group: "Report",
             subfolder: "",
             type: ".pdf",
@@ -273,15 +273,15 @@
 
        // USAID_HL_2024
       createProject({
-        year: 2020,
-        title: "R4R",
-        folderName: "R4R_2020",
-        themes: ["Climate Change and Health", "Health Systems Strengthening", 'Livelihoods and Health'],
+        year: 2024,
+        title: "USAID_HL",
+        folderName: "USAID_HL_2024",
+        themes: ["Health Systems Strengthening", "Livelihoods and Health", "Digital Solution"],
         description:
-          "ReBUILD for Resilience is an international research consortium funded by the UK government, dedicated to strengthening resilience and building stronger systems for health across multiple levels and sectors in fragile and shock-prone settings, namely Lebanon, Myanmar, Nepal and Sierra Leone. These settings face significant challenges due to fragility, violence, conflict and other shocks, eroding efforts to build healthy, equitable and prosperous societies. Innovative, timely and contextually tailored evidence generated in partnership with key local and national stakeholders is critical to developing and sustaining resilient health systems, which are currently lacking in these regions. Through this consortium, we aim to generate high quality, practical, multidisciplinary, operationally-relevant and scalable health system research in these settings.",
+          "USAID/Nepal awarded the five-year USAID Health Learning to HERD International in August 2024. USAID Health Learning assists USAID/Nepal’s Health Office and its implementing partners to adopt uniform and systematic Monitoring, Evaluation, Research and Learning (MERL) approaches and advance broader organizational learning and development objectives."
         files: [
           {
-            name: "R4R Report",
+            name: "USAID HL Report",
             group: "Report",
             subfolder: "",
             type: ".pdf",
