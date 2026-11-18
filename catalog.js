@@ -274,9 +274,9 @@
        // USAID_HL_2024
       createProject({
         year: 2024,
-        title: "USAID_HL",
+        title: "USAID Health Learning",
         folderName: "USAID_HL_2024",
-        themes: ["Health Systems Strengthening", "Livelihoods and Health", "Digital Solution"],
+        themes: ["Health Systems Strengthening", "Livelihoods and Health"],
         description:
           "USAID/Nepal awarded the five-year USAID Health Learning to HERD International in August 2024. USAID Health Learning assists USAID/Nepal’s Health Office and its implementing partners to adopt uniform and systematic Monitoring, Evaluation, Research and Learning (MERL) approaches and advance broader organizational learning and development objectives.",
         files: [
