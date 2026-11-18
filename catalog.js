@@ -28,7 +28,7 @@ window.HERD_CATALOG = {
           group: "Report",
           type: ".pdf",
           access: "public",
-          publicUrl: "./files/CHORUS_2020/Report/chorus-report.pdf"
+          publicUrl: "https://zenodo.org/records/24332463/files/chorus-report.pdf?download=1"
         },
         {
           name: "Survey Questionnaire",
