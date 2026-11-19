@@ -241,8 +241,8 @@
             group: "Tools",
             subfolder: "Quantitative Tools",
             type: ".docx",
-            access: "request",
-            publicUrl: ""
+            access: "public",
+            publicUrl: "https://zenodo.org/records/24365691/files/Questionnaire_PVS_2024.docx?download=1"
           },
           {
             name: "Qualitative Interview Guide",
