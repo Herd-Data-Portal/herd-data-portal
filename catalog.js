@@ -9,7 +9,7 @@
       name: "Data Collection Tools",
       groupKey: "Tools", // matches existing file.group: "Tools"
       subfolders: [
-        { name: "Qualitative Tools" },
+        { name: "Qualitative Tools" }, 
         { name: "Quantitative Tools" }
       ]
     },
