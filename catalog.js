@@ -189,8 +189,8 @@
             group: "Tools",
             subfolder: "Quantitative Tools",
             type: ".docx",
-            access: "request",
-            publicUrl: ""
+            access: "public",
+            publicUrl: "https://zenodo.org/records/24365495/files/Questionnaire_English.docx?download=1"
           },
           {
             name: "Qualitative Interview Guide",
