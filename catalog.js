@@ -133,12 +133,12 @@
             publicUrl: "https://zenodo.org/records/24332463/files/chorus-report.pdf?download=1"
           },
           {
-            name: "Survey Questionnaire",
+            name: "Community Mapping Questionnaire",
             group: "Tools",
             subfolder: "Quantitative Tools",
             type: ".docx",
-            access: "request",
-            publicUrl: ""
+            access: "public",
+            publicUrl: "https://zenodo.org/records/24365313/files/Community%20Mapping%20Questionnaire.pdf?download=1"
           },
           {
             name: "Qualitative Interview Guide",
