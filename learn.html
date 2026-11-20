@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HERD Centre for Data Science learning hub: Data Science, Machine Learning, AI, GIS, Stata, R, and Python resources.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Data Science &amp; AI Hub | HERD International</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./learn-data.js" defer></script>
+  <script src="./learn.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <a href="./index.html" class="brand-home" aria-label="HERD Research Data Catalogue home">
+          <img class="brand-logo" src="./logo.svg" alt="HERD International logo" width="120">
+        </a>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="./index.html">Data Catalogue</a>
+        <a class="nav-link active" href="./learn.html">DS &amp; AI Hub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="kicker">Centre for Data Science · Capacity Building</span>
+        <h1>Learn the stack.<br><em>Turn data into evidence.</em></h1>
+        <p>A practical guide for students, graduates, and researchers covering Statistics, Machine Learning, Applied AI, Geospatial Analytics, and open-source tools across Stata, R, and Python.</p>
+        <div class="hero-actions">
+          <a class="hero-btn primary" href="#curriculum">Explore 6 Learning Pillars</a>
+          <a class="hero-btn" href="#codelab">Hands-On Code Lab</a>
+          <a class="hero-btn" href="#toolkit">Software &amp; Packages</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="curriculum" class="catalogue wrap" aria-labelledby="curriculum-title">
+      <div class="section-heading">
+        <div>
+          <span class="kicker dark">LEARNING ROADMAP</span>
+          <h2 id="curriculum-title">Data Science, ML &amp; AI Curriculum</h2>
+        </div>
+        <p>Six core pillars tailored for real-world &amp; health research data</p>
+      </div>
+      <div id="pillar-grid" class="pillar-grid"></div>
+    </section>
+
+    <section id="codelab" class="wrap codelab-section" aria-labelledby="codelab-title">
+      <div class="section-heading">
+        <div>
+          <span class="kicker dark">INTERACTIVE CODE LAB</span>
+          <h2 id="codelab-title">Compare Stata, R &amp; Python side by side</h2>
+        </div>
+        <p>Select a concept and switch languages to copy reproducible starter code</p>
+      </div>
+
+      <div id="lab-topics" class="lab-topics" role="tablist" aria-label="Code Lab topics"></div>
+
+      <article class="lab-card">
+        <div class="lab-header">
+          <div>
+            <span id="lab-badge" class="theme-chip"></span>
+            <h3 id="lab-heading"></h3>
+            <p id="lab-summary" class="project-desc"></p>
+          </div>
+          <div id="lab-langs" class="lang-tabs" role="tablist" aria-label="Programming language"></div>
+        </div>
+
+        <div class="code-shell">
+          <div class="code-bar">
+            <span id="code-filename" class="code-filename"></span>
+            <button id="copy-code-btn" class="copy-btn" type="button">Copy code</button>
+          </div>
+          <pre class="code-block"><code id="lab-code"></code></pre>
+        </div>
+
+        <div class="lab-notes">
+          <div>
+            <strong>When to use it</strong>
+            <p id="lab-when"></p>
+          </div>
+          <div>
+            <strong>Common pitfall to avoid</strong>
+            <p id="lab-pitfall"></p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="toolkit" class="catalogue wrap" aria-labelledby="toolkit-title">
+      <div class="section-heading">
+        <div>
+          <span class="kicker dark">OPEN-SOURCE TOOLKIT</span>
+          <h2 id="toolkit-title">Downloads, Packages &amp; GitHub Links</h2>
+        </div>
+        <p id="tool-count"></p>
+      </div>
+
+      <div id="tool-filters" class="tags tool-filters" role="group" aria-label="Filter tools by category"></div>
+      <div id="tool-grid" class="tool-grid"></div>
+    </section>
+
+    <section class="access-note wrap" aria-labelledby="ethics-title">
+      <div>
+        <span class="kicker dark">RESPONSIBLE AI &amp; PRIVACY</span>
+        <h2 id="ethics-title">Never paste participant data into public AI tools.</h2>
+      </div>
+      <p>Raw survey CSVs, interview transcripts, and GPS coordinates must remain inside secure organizational storage. When using LLMs for coding help or qualitative analysis, use anonymized dummy schemas or run open-weights models locally (such as via Ollama) with zero external data sharing.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">HERD International · Research Data Portal &amp; Centre for Data Science Learning Hub.</div>
+  </footer>
+</body>
+</html>
