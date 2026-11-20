@@ -1,0 +1,156 @@
+content:
+  - name: projects
+    label: Research Projects
+    type: collection
+    path: data/projects
+    format: json
+    filename: "{fields.folderName}.json"
+    view:
+      primary: title
+      fields:
+        - year
+        - title
+        - folderName
+      sort: year
+      order: desc
+    fields:
+      - name: year
+        label: Project Year
+        type: number
+        required: true
+        description: "4-digit start/survey year (e.g. 2020 or 2024)."
+
+      - name: title
+        label: Project Short Title
+        type: string
+        required: true
+        description: "Display name shown on the website card (e.g. CHORUS II, REACT, R4R)."
+
+      - name: folderName
+        label: OneDrive Folder Code
+        type: string
+        required: true
+        pattern:
+          regex: "^[A-Z0-9_]+_\\d{4}$"
+          message: "Use UPPERCASE_CODE_YEAR format (e.g. CHORUS_2020 or USAID_HL_2024)."
+        description: "Must match OneDrive code in UPPERCASE_YEAR format (e.g. CHORUS_2020)."
+
+      - name: themes
+        label: Thematic Areas
+        type: select
+        options:
+          multiple: true
+          values:
+            - Health Systems Strengthening
+            - Antimicrobial Resistance (AMR)
+            - Climate Change and Health
+            - Livelihoods and Health
+            - Digital Solution
+            - Nutrition
+
+      - name: description
+        label: Project Summary
+        type: text
+        required: true
+        description: "Short public summary approved for display on the catalogue."
+
+      - name: files
+        label: Approved Files & Datasets
+        type: object
+        list: true
+        description: "Add only approved public links or request-only file listings. Never list private OneDrive paths."
+        fields:
+          - name: name
+            label: Display Title
+            type: string
+            required: true
+            description: "Human-readable name (e.g. CHORUS Report, Household Survey Data)."
+
+          - name: group
+            label: Main Folder
+            type: select
+            required: true
+            options:
+              values:
+                - Tools
+                - Datasets
+                - Field Manual
+                - Publications
+                - Report
+                - Others
+
+          - name: subfolder
+            label: Subfolder (Optional)
+            type: select
+            required: false
+            options:
+              placeholder: "None (Main folder)"
+              values:
+                - Qualitative Tools
+                - Quantitative Tools
+                - Final datasets
+                - GPS data
+                - Qualitative data
+                - Raw datasets
+                - Syntax
+                - Urban Health Equity Data
+            description: "Only select a subfolder if this file belongs inside Tools or Datasets subfolders."
+
+          - name: type
+            label: File Format
+            type: select
+            required: true
+            options:
+              values:
+                - .pdf
+                - .docx
+                - .doc
+                - .csv
+                - .xlsx
+                - .do
+                - .ipynb
+                - .R
+                - .py
+                - .png
+                - .zip
+
+          - name: access
+            label: Access Level
+            type: select
+            required: true
+            default: request
+            options:
+              values:
+                - public
+                - request
+            description: "Choose 'public' for Zenodo downloads, or 'request' for Microsoft Form approval."
+
+          - name: publicUrl
+            label: Zenodo Public URL
+            type: string
+            required: false
+            description: "Required ONLY if Access Level is 'public'. Leave empty if 'request'."
+
+  - name: settings
+    label: Portal Settings
+    type: file
+    path: data/settings.json
+    format: json
+    fields:
+      - name: mode
+        label: Catalogue Mode
+        type: select
+        required: true
+        default: public
+        options:
+          values:
+            - public
+            - review
+      - name: requestFormUrl
+        label: Microsoft Request Form URL
+        type: string
+        required: true
+      - name: years
+        label: Years List
+        type: number
+        list: true
