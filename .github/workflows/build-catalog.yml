@@ -1,0 +1,40 @@
+name: Build catalog.js from CMS data
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "data/**"
+      - "scripts/build_catalog.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Rebuild catalog.js
+        run: python3 scripts/build_catalog.py
+
+      - name: Commit updated catalog.js
+        run: |
+          if git diff --quiet catalog.js; then
+            echo "No changes to catalog.js"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add catalog.js
+          git commit -m "chore: rebuild catalog.js from CMS data"
+          git push
