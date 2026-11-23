@@ -21,7 +21,7 @@ window.HERD_CATALOG = {
   "projects": [
     {
       "year": 2020,
-      "title": "CHORUS II test",
+      "title": "CHORUS II",
       "folderName": "CHORUS_2020",
       "themes": [
         "Digital Solution"
