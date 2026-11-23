@@ -215,15 +215,15 @@ window.HERD_CATALOG = {
       ],
       "groups": [
         {
-          "name": "Publications",
+          "name": "Datasets",
           "count": 1
         }
       ],
       "files": [
         {
           "name": "Community Mapping Questionnaire",
-          "group": "Publications",
-          "subfolder": "",
+          "group": "Datasets",
+          "subfolder": "Quantitative Tools",
           "type": ".pdf",
           "access": "public",
           "publicUrl": "https://zenodo.org/records/24365313/files/Community%20Mapping%20Questionnaire.pdf?download=1"
