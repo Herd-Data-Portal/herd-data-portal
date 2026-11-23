@@ -10,7 +10,8 @@
   "files": [
     {
       "name": "Community Mapping Questionnaire",
-      "group": "Publications",
+      "group": "Datasets",
+      "subfolder": "Quantitative Tools",
       "type": ".pdf",
       "access": "public",
       "publicUrl": "https://zenodo.org/records/24365313/files/Community%20Mapping%20Questionnaire.pdf?download=1"
