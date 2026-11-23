@@ -211,12 +211,16 @@ window.HERD_CATALOG = {
         {
           "name": ".pdf",
           "count": 1
+        },
+        {
+          "name": ".do",
+          "count": 1
         }
       ],
       "groups": [
         {
           "name": "Datasets",
-          "count": 1
+          "count": 2
         }
       ],
       "files": [
@@ -227,6 +231,14 @@ window.HERD_CATALOG = {
           "type": ".pdf",
           "access": "public",
           "publicUrl": "https://zenodo.org/records/24365313/files/Community%20Mapping%20Questionnaire.pdf?download=1"
+        },
+        {
+          "name": "R4R Mapping Animal Farm Staff Detail",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
         }
       ]
     }
