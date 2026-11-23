@@ -505,7 +505,7 @@ window.HERD_CATALOG = {
     },
     {
       "year": 2020,
-      "title": "R4R",
+      "title": "CHORUS II",
       "folderName": "CHORUS_2020",
       "themes": [
         "Digital Solution"
