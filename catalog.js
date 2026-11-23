@@ -214,13 +214,13 @@ window.HERD_CATALOG = {
         },
         {
           "name": ".do",
-          "count": 1
+          "count": 6
         }
       ],
       "groups": [
         {
           "name": "Datasets",
-          "count": 2
+          "count": 7
         }
       ],
       "files": [
@@ -234,6 +234,46 @@ window.HERD_CATALOG = {
         },
         {
           "name": "R4R Mapping Animal Farm Staff Detail",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "R4R Mapping Farm Staff Detail",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "R4R Mapping Healt Facility Staff Detail",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "R4R Mapping HF Opening Day & Time Duration",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "R4R Mapping Main Dataset 2025",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "R4R Mapping Special Service Provide from HF",
           "group": "Datasets",
           "subfolder": "Final datasets",
           "type": ".do",
