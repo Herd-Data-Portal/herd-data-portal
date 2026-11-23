@@ -12,7 +12,7 @@ Welcome to **HERD International's Research Data Portal & Centre for Data Science
   Browse HERD International research projects by year, thematic area, and resource type. View project summaries, download approved public reports, tools, and outputs, or request access to restricted datasets.
 
 * **Data Science & AI Hub**  
-  A capacity-building space for students, graduates, and researchers featuring core learning pillars in Data Science, Machine Learning, GIS, and Responsible AI—alongside side-by-side **Stata, R, and Python** code examples and recommended open-source tools.
+  A capacity-building space for students, graduates, and researchers featuring core learning pillars in Data Science, Machine Learning, GIS, and Responsible AI alongside side-by-side **Stata, R, and Python** code examples and recommended open-source tools.
 
 * **Standards & Impact**  
   A curated directory of Nepal and global public health data sources, data quality and de-identification standards, citation guidelines, synthetic practice datasets for hands-on learning, and pathways for joint studies and student research.
