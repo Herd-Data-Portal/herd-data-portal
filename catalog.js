@@ -139,6 +139,96 @@ window.HERD_CATALOG = {
           "publicUrl": ""
         }
       ]
+    },
+    {
+      "year": 2020,
+      "title": "ReBUILD for Resilience (R4R)",
+      "folderName": "R4R_2020",
+      "themes": [
+        "Climate Change and Health",
+        "Health Systems Strengthening"
+      ],
+      "folders": [
+        {
+          "name": "Data Collection Tools",
+          "groupKey": "Tools",
+          "subfolders": [
+            {
+              "name": "Qualitative Tools"
+            },
+            {
+              "name": "Quantitative Tools"
+            }
+          ]
+        },
+        {
+          "name": "Datasets",
+          "groupKey": "Datasets",
+          "subfolders": [
+            {
+              "name": "Final datasets"
+            },
+            {
+              "name": "GPS data"
+            },
+            {
+              "name": "Qualitative data"
+            },
+            {
+              "name": "Raw datasets"
+            },
+            {
+              "name": "Syntax"
+            },
+            {
+              "name": "Urban Health Equity Data"
+            }
+          ]
+        },
+        {
+          "name": "Field Manual",
+          "groupKey": "Field Manual",
+          "subfolders": []
+        },
+        {
+          "name": "Others",
+          "groupKey": "Others",
+          "subfolders": []
+        },
+        {
+          "name": "Publications",
+          "groupKey": "Publications",
+          "subfolders": []
+        },
+        {
+          "name": "Report",
+          "groupKey": "Report",
+          "subfolders": []
+        }
+      ],
+      "description": "ReBUILD for Resilience is an international research consortium funded by the UK government, dedicated to strengthening resilience and building stronger systems for health across multiple levels and sectors in fragile and shock-prone settings, namely Lebanon, Myanmar, Nepal and Sierra Leone. ",
+      "types": [
+        {
+          "name": ".pdf",
+          "count": 1
+        }
+      ],
+      "groups": [
+        {
+          "name": "Publications",
+          "count": 1
+        }
+      ],
+      "files": [
+        {
+          "name": "Community Mapping Questionnaire",
+          "group": "Publications",
+          "subfolder": "",
+          "type": ".pdf",
+          "access": "public",
+          "publicUrl": "https://zenodo.org/records/24365313/files/Community%20Mapping%20Questionnaire.pdf?download=1"
+        }
+      ]
     }
   ]
 };
