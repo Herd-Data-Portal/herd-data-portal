@@ -57,6 +57,18 @@
       "subfolder": "Syntax",
       "type": ".do",
       "access": "request"
+    },
+    {
+      "name": "Tables",
+      "group": "Report",
+      "type": ".xlsx",
+      "access": "request"
+    },
+    {
+      "name": "Studay Area Map A4A",
+      "group": "Others",
+      "type": ".png",
+      "access": "request"
     }
   ]
 }
