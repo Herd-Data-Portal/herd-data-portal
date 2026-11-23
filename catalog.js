@@ -194,6 +194,176 @@ window.HERD_CATALOG = {
       ]
     },
     {
+      "year": 2023,
+      "title": "Peoples’ Voice Survey (PVS)",
+      "folderName": "PVS_2023",
+      "themes": [
+        "Digital Solution",
+        "Health Systems Strengthening"
+      ],
+      "folders": [
+        {
+          "name": "Data Collection Tools",
+          "groupKey": "Tools",
+          "subfolders": [
+            {
+              "name": "Qualitative Tools"
+            },
+            {
+              "name": "Quantitative Tools"
+            }
+          ]
+        },
+        {
+          "name": "Datasets",
+          "groupKey": "Datasets",
+          "subfolders": [
+            {
+              "name": "Final datasets"
+            },
+            {
+              "name": "GPS data"
+            },
+            {
+              "name": "Qualitative data"
+            },
+            {
+              "name": "Raw datasets"
+            },
+            {
+              "name": "Syntax"
+            },
+            {
+              "name": "Urban Health Equity Data"
+            }
+          ]
+        },
+        {
+          "name": "Field Manual",
+          "groupKey": "Field Manual",
+          "subfolders": []
+        },
+        {
+          "name": "Others",
+          "groupKey": "Others",
+          "subfolders": []
+        },
+        {
+          "name": "Publications",
+          "groupKey": "Publications",
+          "subfolders": []
+        },
+        {
+          "name": "Report",
+          "groupKey": "Report",
+          "subfolders": []
+        }
+      ],
+      "description": "Healthcare accessibility is increasing worldwide as nations strive for Universal Health Coverage (UHC). However, access alone does not always translate to better health outcomes. Each year, five million people die from treatable conditions despite seeking medical care, highlighting critical gaps in the quality of care. This issue highlights the need for comprehensive assessments of health system performance that encompass both access and quality of care. In low- and middle-income countries (LMICs), current methods for measuring health system quality often fall short, focusing primarily on specific facilities or one-time population surveys. Consequently, there is a lack of understanding regarding the broader perspectives of healthcare users. The People’s Voice Survey (PVS), developed by the Quality Evidence for Health System Transformation (QuEST) Network, aims to fill this gap. ",
+      "types": [
+        {
+          "name": ".docx",
+          "count": 3
+        },
+        {
+          "name": ".xlsx",
+          "count": 2
+        },
+        {
+          "name": ".doc",
+          "count": 1
+        },
+        {
+          "name": ".R",
+          "count": 1
+        },
+        {
+          "name": ".pdf",
+          "count": 1
+        }
+      ],
+      "groups": [
+        {
+          "name": "Datasets",
+          "count": 5
+        },
+        {
+          "name": "Field Manual",
+          "count": 2
+        },
+        {
+          "name": "Report",
+          "count": 1
+        }
+      ],
+      "files": [
+        {
+          "name": "PVS Questionnaire",
+          "group": "Datasets",
+          "subfolder": "Quantitative Tools",
+          "type": ".docx",
+          "access": "public",
+          "publicUrl": "https://zenodo.org/records/24460297/files/Questionnaire_PVS_2024.docx?download=1"
+        },
+        {
+          "name": "PVS ODK ",
+          "group": "Datasets",
+          "subfolder": "Quantitative Tools",
+          "type": ".xlsx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "CI Guideline_NEP PVS ",
+          "group": "Datasets",
+          "subfolder": "Qualitative Tools",
+          "type": ".doc",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PVS Dataset",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".xlsx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PVS Dataset code",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".R",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PVS Interviewer Manual",
+          "group": "Field Manual",
+          "subfolder": "",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PVS Implementation Protocol",
+          "group": "Field Manual",
+          "subfolder": "",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PVS Report ",
+          "group": "Report",
+          "subfolder": "",
+          "type": ".pdf",
+          "access": "request",
+          "publicUrl": ""
+        }
+      ]
+    },
+    {
       "year": 2020,
       "title": "Community-led Responsive and Effective Urban Health Systems (CHORUS)",
       "folderName": "CHORUS_2020",
