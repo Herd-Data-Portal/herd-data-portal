@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Public health data standards, Nepal open health data directory, synthetic practice datasets, and collaboration pathways at HERD International.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Standards &amp; Impact | HERD International</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./standards-data.js" defer></script>
+  <script src="./standards.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <div class="brand">
+        <a href="./index.html" class="brand-home" aria-label="HERD Research Data Catalogue home">
+          <img class="brand-logo" src="./logo.svg" alt="HERD International logo" width="120">
+        </a>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a class="nav-link" href="./index.html">Data Catalogue</a>
+        <a class="nav-link" href="./learn.html">DS &amp; AI Hub</a>
+        <a class="nav-link active" href="./standards.html">Standards &amp; Impact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="kicker">Centre for Data Science · Governance &amp; Ecosystem</span>
+        <h1>Trusted standards.<br><em>Collaborative public health.</em></h1>
+        <p>Explore Nepal and global open health data portals, follow HERD's data quality and de-identification standards, practice on synthetic public health datasets, and learn how to collaborate with our research team.</p>
+        <div class="hero-actions">
+          <a class="hero-btn primary" href="#open-health-data">Nepal &amp; Global Data</a>
+          <a class="hero-btn" href="#data-standards">Data Standards</a>
+          <a class="nav-spacer hero-btn" href="#sandbox">Practice Sandbox</a>
+          <a class="hero-btn" href="#collaborate">Team &amp; Collaborate</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="open-health-data" class="catalogue wrap" aria-labelledby="directory-title">
+      <div class="section-heading">
+        <div>
+          <span class="kicker dark">PUBLIC HEALTH DATA ECOSYSTEM</span>
+          <h2 id="directory-title">Nepal &amp; Global Health Data Directory</h2>
+        </div>
+        <p id="source-count"></p>
+      </div>
+      <div id="source-filters" class="tags tool-filters" role="group" aria-label="Filter data sources by scope"></div>
+      <div id="source-grid" class="tool-grid"></div>
+    </section>
+
+    <section id="data-standards" class="wrap standards-section" aria-labelledby="standards-title">
+      <div class="section-heading">
+        <div>
+          <span class="kicker dark">DATA EXCELLENCE STANDARDS</span>
+          <h2 id="standards-title">Quality, De-identification &amp; Citation</h2>
+        </div>
+        <p>Practical standards followed across HERD International studies</p>
+      </div>
+
+      <div id="standards-grid" class="pillar-grid"></div>
+
+      <div class="citation-card">
+        <div>
+          <span class="kicker dark">HOW TO CITE</span>
+          <h3>Standard Citation Format for HERD Zenodo Datasets</h3>
+          <p class="project-desc">Always cite the project's Concept DOI (or exact version DOI) in theses, journal manuscripts, and policy briefs.</p>
+          <pre class="citation-text"><code id="citation-sample"></code></pre>
+        </div>
+        <div class="citation-actions">
+          <button id="copy-citation-btn" class="hero-btn primary citation-btn" type="button">Copy citation</button>
+          <button id="download-codebook-btn" class="btn-link" type="button">Download codebook template (.csv)</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="sandbox" class="catalogue wrap" aria-labelledby="sandbox-title">
+      <div class="section-heading">
+        <div>
+          <span class="kicker dark">PRACTICE SANDBOX · ZERO PRIVACY RISK</span>
+          <h2 id="sandbox-title">Synthetic Public Health Practice Datasets</h2>
+        </div>
+        <p>Simulated CSVs designed to match the code examples in the DS &amp; AI Hub</p>
+      </div>
+      <div id="sandbox-grid" class="project-grid sandbox-grid"></div>
+    </section>
+
+    <section id="collaborate" class="wrap collaborate-section" aria-labelledby="collab-title">
+      <div class="section-heading">
+        <div>
+          <span class="kicker dark">PEOPLE &amp; PARTNERSHIPS</span>
+          <h2 id="collab-title">Data Science Team &amp; Student Collaboration</h2>
+        </div>
+        <p>Pathways for fellows, MPH/MSc students, and institutional partners</p>
+      </div>
+
+      <div id="team-grid" class="tool-grid team-grid"></div>
+
+      <div class="pathway-card">
+        <h3>How Young Researchers Can Request Secondary Data Analysis</h3>
+        <div id="pathway-steps" class="pathway-grid"></div>
+        <div class="pathway-cta">
+          <a class="btn-link" href="https://forms.cloud.microsoft/r/sdQecHfi3H" target="_blank" rel="noopener noreferrer">Open Data Access Request Form</a>
+          <a class="btn-link" href="mailto:info@herdint.com?subject=Joint%20Research%20or%20Thesis%20Collaboration">Propose a Joint Study (Email)</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">HERD International · Research Data Portal · Standards, Open Public Health Ecosystem &amp; Collaboration.</div>
+  </footer>
+</body>
+</html>
