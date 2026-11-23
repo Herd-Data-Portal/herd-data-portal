@@ -1,0 +1,62 @@
+{
+  "year": 2024,
+  "title": "Analysis for Action (A4A)",
+  "folderName": "A4A_2024",
+  "themes": [
+    "Digital Solution",
+    "Health Systems Strengthening"
+  ],
+  "description": "Analysis for Action is a five-year project (2023 to 2028), funded by Wellcome, which aims to equip National Statistical Offices (NSOs) with skills and tools to support evidence-based preparedness and response to health emergencies.",
+  "files": [
+    {
+      "name": "Questionnaire English",
+      "group": "Datasets",
+      "subfolder": "Quantitative Tools",
+      "type": ".docx",
+      "access": "public",
+      "publicUrl": "https://zenodo.org/records/24365495/files/Questionnaire_English.docx?download=1"
+    },
+    {
+      "name": "A4A Dataset",
+      "group": "Datasets",
+      "subfolder": "Final datasets",
+      "type": ".do",
+      "access": "request"
+    },
+    {
+      "name": "PPT Raw Data",
+      "group": "Datasets",
+      "subfolder": "Raw datasets",
+      "type": ".xlsx",
+      "access": "request"
+    },
+    {
+      "name": "Data Cleaning Syntax",
+      "group": "Datasets",
+      "subfolder": "Syntax",
+      "type": ".do",
+      "access": "request"
+    },
+    {
+      "name": "PPT_Analysis Table Syntax",
+      "group": "Datasets",
+      "subfolder": "Syntax",
+      "type": ".do",
+      "access": "request"
+    },
+    {
+      "name": "Raw Data Import & Cleaning",
+      "group": "Datasets",
+      "subfolder": "Syntax",
+      "type": ".do",
+      "access": "request"
+    },
+    {
+      "name": "Annex Table",
+      "group": "Datasets",
+      "subfolder": "Syntax",
+      "type": ".do",
+      "access": "request"
+    }
+  ]
+}
