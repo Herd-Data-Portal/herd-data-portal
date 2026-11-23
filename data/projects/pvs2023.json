@@ -1,0 +1,66 @@
+{
+  "year": 2023,
+  "title": "Peoples’ Voice Survey (PVS)",
+  "folderName": "PVS_2023",
+  "themes": [
+    "Digital Solution",
+    "Health Systems Strengthening"
+  ],
+  "description": "Healthcare accessibility is increasing worldwide as nations strive for Universal Health Coverage (UHC). However, access alone does not always translate to better health outcomes. Each year, five million people die from treatable conditions despite seeking medical care, highlighting critical gaps in the quality of care. This issue highlights the need for comprehensive assessments of health system performance that encompass both access and quality of care. In low- and middle-income countries (LMICs), current methods for measuring health system quality often fall short, focusing primarily on specific facilities or one-time population surveys. Consequently, there is a lack of understanding regarding the broader perspectives of healthcare users. The People’s Voice Survey (PVS), developed by the Quality Evidence for Health System Transformation (QuEST) Network, aims to fill this gap. ",
+  "files": [
+    {
+      "name": "PVS Questionnaire",
+      "group": "Datasets",
+      "subfolder": "Quantitative Tools",
+      "type": ".docx",
+      "access": "public",
+      "publicUrl": "https://zenodo.org/records/24460297/files/Questionnaire_PVS_2024.docx?download=1"
+    },
+    {
+      "name": "PVS ODK ",
+      "group": "Datasets",
+      "subfolder": "Quantitative Tools",
+      "type": ".xlsx",
+      "access": "request"
+    },
+    {
+      "name": "CI Guideline_NEP PVS ",
+      "group": "Datasets",
+      "subfolder": "Qualitative Tools",
+      "type": ".doc",
+      "access": "request"
+    },
+    {
+      "name": "PVS Dataset",
+      "group": "Datasets",
+      "subfolder": "Final datasets",
+      "type": ".xlsx",
+      "access": "request"
+    },
+    {
+      "name": "PVS Dataset code",
+      "group": "Datasets",
+      "subfolder": "Syntax",
+      "type": ".R",
+      "access": "request"
+    },
+    {
+      "name": "PVS Interviewer Manual",
+      "group": "Field Manual",
+      "type": ".docx",
+      "access": "request"
+    },
+    {
+      "name": "PVS Implementation Protocol",
+      "group": "Field Manual",
+      "type": ".docx",
+      "access": "request"
+    },
+    {
+      "name": "PVS Report ",
+      "group": "Report",
+      "type": ".pdf",
+      "access": "request"
+    }
+  ]
+}
