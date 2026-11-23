@@ -20,6 +20,152 @@ window.HERD_CATALOG = {
   "requestFormUrl": "https://forms.cloud.microsoft/r/sdQecHfi3H",
   "projects": [
     {
+      "year": 2024,
+      "title": "Analysis for Action (A4A)",
+      "folderName": "A4A_2024",
+      "themes": [
+        "Digital Solution",
+        "Health Systems Strengthening"
+      ],
+      "folders": [
+        {
+          "name": "Data Collection Tools",
+          "groupKey": "Tools",
+          "subfolders": [
+            {
+              "name": "Qualitative Tools"
+            },
+            {
+              "name": "Quantitative Tools"
+            }
+          ]
+        },
+        {
+          "name": "Datasets",
+          "groupKey": "Datasets",
+          "subfolders": [
+            {
+              "name": "Final datasets"
+            },
+            {
+              "name": "GPS data"
+            },
+            {
+              "name": "Qualitative data"
+            },
+            {
+              "name": "Raw datasets"
+            },
+            {
+              "name": "Syntax"
+            },
+            {
+              "name": "Urban Health Equity Data"
+            }
+          ]
+        },
+        {
+          "name": "Field Manual",
+          "groupKey": "Field Manual",
+          "subfolders": []
+        },
+        {
+          "name": "Others",
+          "groupKey": "Others",
+          "subfolders": []
+        },
+        {
+          "name": "Publications",
+          "groupKey": "Publications",
+          "subfolders": []
+        },
+        {
+          "name": "Report",
+          "groupKey": "Report",
+          "subfolders": []
+        }
+      ],
+      "description": "Analysis for Action is a five-year project (2023 to 2028), funded by Wellcome, which aims to equip National Statistical Offices (NSOs) with skills and tools to support evidence-based preparedness and response to health emergencies.",
+      "types": [
+        {
+          "name": ".docx",
+          "count": 1
+        },
+        {
+          "name": ".do",
+          "count": 5
+        },
+        {
+          "name": ".xlsx",
+          "count": 1
+        }
+      ],
+      "groups": [
+        {
+          "name": "Datasets",
+          "count": 7
+        }
+      ],
+      "files": [
+        {
+          "name": "Questionnaire English",
+          "group": "Datasets",
+          "subfolder": "Quantitative Tools",
+          "type": ".docx",
+          "access": "public",
+          "publicUrl": "https://zenodo.org/records/24365495/files/Questionnaire_English.docx?download=1"
+        },
+        {
+          "name": "A4A Dataset",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PPT Raw Data",
+          "group": "Datasets",
+          "subfolder": "Raw datasets",
+          "type": ".xlsx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "Data Cleaning Syntax",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PPT_Analysis Table Syntax",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "Raw Data Import & Cleaning",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "Annex Table",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        }
+      ]
+    },
+    {
       "year": 2020,
       "title": "Community-led Responsive and Effective Urban Health Systems (CHORUS)",
       "folderName": "CHORUS_2020",
