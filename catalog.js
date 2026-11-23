@@ -97,6 +97,10 @@ window.HERD_CATALOG = {
         },
         {
           "name": ".xlsx",
+          "count": 2
+        },
+        {
+          "name": ".png",
           "count": 1
         }
       ],
@@ -104,6 +108,14 @@ window.HERD_CATALOG = {
         {
           "name": "Datasets",
           "count": 7
+        },
+        {
+          "name": "Report",
+          "count": 1
+        },
+        {
+          "name": "Others",
+          "count": 1
         }
       ],
       "files": [
@@ -160,6 +172,22 @@ window.HERD_CATALOG = {
           "group": "Datasets",
           "subfolder": "Syntax",
           "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "Tables",
+          "group": "Report",
+          "subfolder": "",
+          "type": ".xlsx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "Studay Area Map A4A",
+          "group": "Others",
+          "subfolder": "",
+          "type": ".png",
           "access": "request",
           "publicUrl": ""
         }
