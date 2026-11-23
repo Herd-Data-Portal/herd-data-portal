@@ -21,7 +21,7 @@ window.HERD_CATALOG = {
   "projects": [
     {
       "year": 2020,
-      "title": "CHORUS II",
+      "title": "Community-led Responsive and Effective Urban Health Systems (CHORUS)",
       "folderName": "CHORUS_2020",
       "themes": [
         "Digital Solution"
