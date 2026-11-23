@@ -1,14 +1,15 @@
 {
   "year": 2020,
-  "title": "CHORUS II",
+  "title": "CHORUS II test",
   "folderName": "CHORUS_2020",
-  "themes": ["Digital Solution"],
+  "themes": [
+    "Digital Solution"
+  ],
   "description": "CHORUS is a community health research project conducted in Budhanilkantha Ward 4 & 7. It includes household census data, family health records, GPS mapping data, and analysis code. Report and summary outputs are available; full datasets are available on request.",
   "files": [
     {
       "name": "CHORUS Report",
       "group": "Report",
-      "subfolder": "",
       "type": ".pdf",
       "access": "public",
       "publicUrl": "https://zenodo.org/records/24332463/files/chorus-report.pdf?download=1"
@@ -18,16 +19,14 @@
       "group": "Tools",
       "subfolder": "Quantitative Tools",
       "type": ".docx",
-      "access": "request",
-      "publicUrl": ""
+      "access": "request"
     },
     {
       "name": "Household Survey Data",
       "group": "Datasets",
       "subfolder": "Final datasets",
       "type": ".csv",
-      "access": "request",
-      "publicUrl": ""
+      "access": "request"
     }
   ]
 }
