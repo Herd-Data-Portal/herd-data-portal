@@ -20,6 +20,180 @@ window.HERD_CATALOG = {
   "requestFormUrl": "https://forms.cloud.microsoft/r/sdQecHfi3H",
   "projects": [
     {
+      "year": 2025,
+      "title": "Dialogue for Innovation and Impact (D4I) ",
+      "folderName": "D4I_2025",
+      "themes": [
+        "Livelihoods and Health",
+        "Health Systems Strengthening"
+      ],
+      "folders": [
+        {
+          "name": "Data Collection Tools",
+          "groupKey": "Tools",
+          "subfolders": [
+            {
+              "name": "Qualitative Tools"
+            },
+            {
+              "name": "Quantitative Tools"
+            }
+          ]
+        },
+        {
+          "name": "Datasets",
+          "groupKey": "Datasets",
+          "subfolders": [
+            {
+              "name": "Final datasets"
+            },
+            {
+              "name": "GPS data"
+            },
+            {
+              "name": "Qualitative data"
+            },
+            {
+              "name": "Raw datasets"
+            },
+            {
+              "name": "Syntax"
+            },
+            {
+              "name": "Urban Health Equity Data"
+            }
+          ]
+        },
+        {
+          "name": "Field Manual",
+          "groupKey": "Field Manual",
+          "subfolders": []
+        },
+        {
+          "name": "Others",
+          "groupKey": "Others",
+          "subfolders": []
+        },
+        {
+          "name": "Publications",
+          "groupKey": "Publications",
+          "subfolders": []
+        },
+        {
+          "name": "Report",
+          "groupKey": "Report",
+          "subfolders": []
+        }
+      ],
+      "description": "Federalism has reshaped Nepal’s health system, creating opportunities for more responsive services while adding complexity in coordination, governance, financing, and health workforce management at subnational levels. As Nepal prepares to graduate from Least Developed Country (LDC) status in 2026, strengthening the health system is essential for advancing Universal Health Coverage (UHC) and Sustainable Development Goals (SDGs). Addressing these challenges requires evidence-driven reforms, particularly in two critical areas: Human Resources for Health (HRH) and Health Taxation (HT). HRH shortages, maldistribution, weak retention, and fragmented planning continue to constrain service delivery. At the same time, HT remains an underused tool for reducing Non-Communicable Disease (NCD) risks and expanding fiscal space, as current taxes on tobacco, alcohol, SSBs and limited efforts on Industrially produced trans-fat (iTFA) elimination remain fragmented and weakly enforced.",
+      "types": [
+        {
+          "name": ".docx",
+          "count": 6
+        },
+        {
+          "name": ".xlsx",
+          "count": 2
+        },
+        {
+          "name": ".ipynb",
+          "count": 2
+        }
+      ],
+      "groups": [
+        {
+          "name": "Datasets",
+          "count": 8
+        },
+        {
+          "name": "Report",
+          "count": 2
+        }
+      ],
+      "files": [
+        {
+          "name": "D4I HRH Rapid Market Analysis Questionnaire",
+          "group": "Datasets",
+          "subfolder": "Quantitative Tools",
+          "type": ".docx",
+          "access": "public",
+          "publicUrl": "https://zenodo.org/records/24490065/files/Nepal%20HRH%20Rapid%20Market%20Analysis_27Jan.docx?download=1"
+        },
+        {
+          "name": "HRH_KII for Health Office",
+          "group": "Datasets",
+          "subfolder": "Qualitative Tools",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "KII- HRH- Hospitals",
+          "group": "Datasets",
+          "subfolder": "Qualitative Tools",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "D4I Final Datasets",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".xlsx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "HRH Study",
+          "group": "Datasets",
+          "subfolder": "Qualitative Tools",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "Top diseases",
+          "group": "Datasets",
+          "subfolder": "Raw datasets",
+          "type": ".xlsx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "D4I HRH Python code",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".ipynb",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "D4I HRH Visuzalition (Matplotlib and Seaborn)",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".ipynb",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "Quarterly Technical Report (Jan-March 2026)",
+          "group": "Report",
+          "subfolder": "",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "Rapid HRH Market Analysis Report_3.30.2026",
+          "group": "Report",
+          "subfolder": "",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        }
+      ]
+    },
+    {
       "year": 2024,
       "title": "Analysis for Action (A4A)",
       "folderName": "A4A_2024",
