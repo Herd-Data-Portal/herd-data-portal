@@ -480,7 +480,7 @@ window.HERD_CATALOG = {
           "publicUrl": ""
         },
         {
-          "name": "PECAN Census Roster Final 07072025",
+          "name": "PECAN Census Roster",
           "group": "Datasets",
           "subfolder": "Final datasets",
           "type": ".do",
@@ -488,7 +488,7 @@ window.HERD_CATALOG = {
           "publicUrl": ""
         },
         {
-          "name": "PECAN Main Dataset Clean 07072025",
+          "name": "PECAN Main Dataset Clean",
           "group": "Datasets",
           "subfolder": "Final datasets",
           "type": ".do",
@@ -512,7 +512,7 @@ window.HERD_CATALOG = {
           "publicUrl": ""
         },
         {
-          "name": "PECANkobo2stata_Census",
+          "name": "PECAN Kobo Stata Census",
           "group": "Datasets",
           "subfolder": "Syntax",
           "type": ".do",
