@@ -368,6 +368,216 @@ window.HERD_CATALOG = {
       ]
     },
     {
+      "year": 2024,
+      "title": "Participatory Engagement of City Communities Against Non-communicable Disease Risk (PECAN)",
+      "folderName": "PECAN_2024",
+      "themes": [
+        "Livelihoods and Health",
+        "Health Systems Strengthening"
+      ],
+      "folders": [
+        {
+          "name": "Data Collection Tools",
+          "groupKey": "Tools",
+          "subfolders": [
+            {
+              "name": "Qualitative Tools"
+            },
+            {
+              "name": "Quantitative Tools"
+            }
+          ]
+        },
+        {
+          "name": "Datasets",
+          "groupKey": "Datasets",
+          "subfolders": [
+            {
+              "name": "Final datasets"
+            },
+            {
+              "name": "GPS data"
+            },
+            {
+              "name": "Qualitative data"
+            },
+            {
+              "name": "Raw datasets"
+            },
+            {
+              "name": "Syntax"
+            },
+            {
+              "name": "Urban Health Equity Data"
+            }
+          ]
+        },
+        {
+          "name": "Field Manual",
+          "groupKey": "Field Manual",
+          "subfolders": []
+        },
+        {
+          "name": "Others",
+          "groupKey": "Others",
+          "subfolders": []
+        },
+        {
+          "name": "Publications",
+          "groupKey": "Publications",
+          "subfolders": []
+        },
+        {
+          "name": "Report",
+          "groupKey": "Report",
+          "subfolders": []
+        }
+      ],
+      "description": "The Participatory Engagement of City Communities Against Non-communicable Disease Risk in Bangladesh and Nepal (PECAN) Project is an implementation research initiative that aims to equip policymakers, practitioners and citizens with evidence-based, equitable and sustainable strategies for promoting health and reducing NCD risk. This project will provide a comparative case study on adaptation, application, and evaluation of Participatory Learning and Action (PLA) in cities in Nepal and Bangladesh. The research will focus primarily on outcomes of common Non-communicable Disease (NCD) risk, including diet, physical activity, tobacco and alcohol use, blood glucose, blood pressure, and Body Mass Index in representative population samples of adults aged 18 and above.",
+      "types": [
+        {
+          "name": ".docx",
+          "count": 4
+        },
+        {
+          "name": ".xlsx",
+          "count": 3
+        },
+        {
+          "name": ".do",
+          "count": 3
+        },
+        {
+          "name": ".R",
+          "count": 4
+        }
+      ],
+      "groups": [
+        {
+          "name": "Datasets",
+          "count": 11
+        },
+        {
+          "name": "Field Manual",
+          "count": 3
+        }
+      ],
+      "files": [
+        {
+          "name": "PECAN Census Questionnaire",
+          "group": "Datasets",
+          "subfolder": "Quantitative Tools",
+          "type": ".docx",
+          "access": "public",
+          "publicUrl": "https://zenodo.org/records/24576868/files/PECAN%20Census%20Questionnaire.docx?download=1"
+        },
+        {
+          "name": "PECAN Census ODK",
+          "group": "Datasets",
+          "subfolder": "Quantitative Tools",
+          "type": ".xlsx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census Roster Final 07072025",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Main Dataset Clean 07072025",
+          "group": "Datasets",
+          "subfolder": "Final datasets",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census MainRaw",
+          "group": "Datasets",
+          "subfolder": "Raw datasets",
+          "type": ".xlsx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census RosterRaw",
+          "group": "Datasets",
+          "subfolder": "Raw datasets",
+          "type": ".xlsx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECANkobo2stata_Census",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".do",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census 2025",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".R",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census ward-09",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".R",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census ward-10",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".R",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census ward-14",
+          "group": "Datasets",
+          "subfolder": "Syntax",
+          "type": ".R",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census Manual_English",
+          "group": "Field Manual",
+          "subfolder": "",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census Manual _Nepali",
+          "group": "Field Manual",
+          "subfolder": "",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        },
+        {
+          "name": "PECAN Census Household Listing Protocol",
+          "group": "Field Manual",
+          "subfolder": "",
+          "type": ".docx",
+          "access": "request",
+          "publicUrl": ""
+        }
+      ]
+    },
+    {
       "year": 2023,
       "title": "Peoples’ Voice Survey (PVS)",
       "folderName": "PVS_2023",
